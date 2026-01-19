@@ -132,13 +132,14 @@ The application follows a modular, scalable architecture with clear separation o
 
 ## Design Philosophy
 
-This application follows modern UI/UX principles:
+This application follows modern UI/UX principles with Flatly's flat design aesthetic:
+- **Flat Design** - No shadows, gradients, or 3D effects for a modern look
 - **Clean Layout** - Uncluttered interface with clear visual hierarchy
 - **Consistent Design** - Uniform styling across all components
 - **Intuitive Navigation** - Easy-to-find features with clear labeling
 - **Responsive Feedback** - Visual indicators for all interactions
 - **Professional Aesthetics** - Color-coded elements for quick identification
-- **High Visibility** - Cosmo light theme with excellent contrast
+- **High Visibility** - Flatly theme with excellent contrast and readability
 - **Modular Architecture** - Separation of concerns for maintainability
 
 ## Future Development
@@ -156,22 +157,28 @@ The current version focuses on the UI/UX design and layout. Future updates will 
 
 - **Framework**: ttkbootstrap (Bootstrap-themed tkinter)
 - **Language**: Python 3.11
-- **Theme**: Cosmo (Light, modern, professional)
+- **Theme**: Flatly (Flat, modern design from Bootswatch)
 - **Layout**: Component-based with responsive packing
 - **Architecture**: MVC-inspired with separation of concerns
 
 ## Color Scheme
 
-The application uses a vibrant, high-contrast color palette for excellent visibility:
+The application uses the **Flatly theme** from Bootswatch - a flat, modern design with excellent readability:
 
-- **Primary**: #0066CC (Vibrant Blue)
-- **Success**: #28A745 (Fresh Green)
-- **Warning**: #FFC107 (Bright Amber)
-- **Danger**: #DC3545 (Bold Red)
-- **Info**: #17A2B8 (Teal)
-- **Secondary**: #6C757D (Cool Gray)
-- **Sidebar**: #2C3E50 (Dark Blue-Gray)
-- **Header**: #34495E (Slate Gray)
+- **Primary**: #2C3E50 (Dark Blue-Gray/Navy)
+- **Success**: #18BC9C (Turquoise/Teal)
+- **Warning**: #F39C12 (Orange)
+- **Danger**: #E74C3C (Red)
+- **Info**: #3498DB (Bright Blue)
+- **Secondary**: #95A5A6 (Gray)
+- **Background**: #ECF0F1 (Light Gray)
+- **Text**: #2C3E50 (Dark Blue-Gray)
+
+### Design Characteristics
+- **Flat Design**: No shadows or gradients, clean and modern
+- **Sharp Aesthetics**: Subtle rounded corners (4px)
+- **High Contrast**: Excellent readability with vibrant colors
+- **Professional**: Business-ready appearance
 
 ## License
 
