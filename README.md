@@ -79,8 +79,56 @@ python3 main.py
 ## Requirements
 
 - Python 3.11+
-- ttkbootstrap 1.10.1
-- Pillow 10.1.0
+- ttkbootstrap (latest version)
+- Pillow (latest version)
+- tkinter (python3-tk)
+
+## Project Structure
+
+```
+db_manager/
+├── main.py                 # Application entry point
+├── requirements.txt        # Python dependencies
+├── config/                 # Configuration modules
+│   ├── __init__.py
+│   ├── theme.py           # Theme colors, fonts, and styling
+│   └── settings.py        # Application settings and data
+├── ui/                     # User interface modules
+│   ├── __init__.py
+│   ├── app.py             # Main application class
+│   ├── components/        # Large UI components
+│   │   ├── __init__.py
+│   │   ├── sidebar.py     # Navigation sidebar
+│   │   ├── header.py      # Top header bar
+│   │   └── dashboard.py   # Dashboard content
+│   └── widgets/           # Reusable UI widgets
+│       ├── __init__.py
+│       ├── stat_card.py   # Statistics card widget
+│       ├── activity_item.py  # Activity log item
+│       └── metric_item.py    # System metric widget
+└── utils/                  # Utility functions
+    └── __init__.py
+```
+
+## Architecture
+
+The application follows a modular, scalable architecture with clear separation of concerns:
+
+### Configuration Layer (`config/`)
+- `theme.py` - Centralized theme management (colors, fonts, icons, spacing)
+- `settings.py` - Application configuration and static data
+
+### UI Layer (`ui/`)
+- `app.py` - Main application orchestrator
+- `components/` - Large, complex UI components (sidebar, header, dashboard)
+- `widgets/` - Small, reusable UI widgets (cards, items, metrics)
+
+### Benefits
+- **Maintainability** - Each component has a single responsibility
+- **Scalability** - Easy to add new features and components
+- **Reusability** - Widgets can be used across different views
+- **Testability** - Components can be tested independently
+- **Readability** - Clear structure makes code easy to understand
 
 ## Design Philosophy
 
@@ -90,6 +138,8 @@ This application follows modern UI/UX principles:
 - **Intuitive Navigation** - Easy-to-find features with clear labeling
 - **Responsive Feedback** - Visual indicators for all interactions
 - **Professional Aesthetics** - Color-coded elements for quick identification
+- **High Visibility** - Cosmo light theme with excellent contrast
+- **Modular Architecture** - Separation of concerns for maintainability
 
 ## Future Development
 
@@ -106,17 +156,22 @@ The current version focuses on the UI/UX design and layout. Future updates will 
 
 - **Framework**: ttkbootstrap (Bootstrap-themed tkinter)
 - **Language**: Python 3.11
-- **Theme**: Darkly (Dark mode optimized)
-- **Layout**: Grid-based with flexbox-style packing
+- **Theme**: Cosmo (Light, modern, professional)
+- **Layout**: Component-based with responsive packing
+- **Architecture**: MVC-inspired with separation of concerns
 
 ## Color Scheme
 
-- Primary: #3498db (Blue)
-- Success: #2ecc71 (Green)
-- Warning: #f39c12 (Orange)
-- Danger: #e74c3c (Red)
-- Info: #16a085 (Teal)
-- Secondary: #2c3e50 (Dark Blue-Grey)
+The application uses a vibrant, high-contrast color palette for excellent visibility:
+
+- **Primary**: #0066CC (Vibrant Blue)
+- **Success**: #28A745 (Fresh Green)
+- **Warning**: #FFC107 (Bright Amber)
+- **Danger**: #DC3545 (Bold Red)
+- **Info**: #17A2B8 (Teal)
+- **Secondary**: #6C757D (Cool Gray)
+- **Sidebar**: #2C3E50 (Dark Blue-Gray)
+- **Header**: #34495E (Slate Gray)
 
 ## License
 
